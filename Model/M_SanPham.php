@@ -58,12 +58,12 @@ class Model_SanPham
             $sanPhamList = new Entity_SanPham($idsp,$tensp,$gia,$anh,$loaisp);
         return $sanPhamList;
     }
-    public function addSanPham($idsp,$tensp,$gia,$anh,$loaisp)
+    public function addSanPham($tensp,$gia,$anh,$loaisp)
     {
         $link = mysqli_connect("127.0.0.1","root","","web_store");
 
         //check if idnv already exist - notyet
-        $sql = "INSERT INTO sanpham(idsp,tensp,gia,anh,loaisp) VALUES ('$idsp','$tensp','$gia','$anh','$loaisp')";
+        $sql = "INSERT INTO sanpham(tensp,gia,anh,loaisp) VALUES ('$tensp','$gia','$anh','$loaisp')";
         $rs = mysqli_query($link,$sql);
         return $rs;
     }

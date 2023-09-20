@@ -1,4 +1,4 @@
-
+<?php include "UserHome.php"?>
 <!DOCTYPE html>
 <html lang="en" title="Coding design">
 
@@ -41,6 +41,7 @@ main.table {
 
     overflow: hidden;
     margin-top:100px;
+    margin-left:200px
 
     
 }
@@ -191,7 +192,7 @@ tbody tr.hide td img {
 
     <main class="table">
         <section class="table__header">
-        <h1>Customer's</h1>
+        <h1>Purchase history</h1>
            
             
            </section>
@@ -210,15 +211,15 @@ tbody tr.hide td img {
                    <tbody>
                        <?php
                       
-                       for ($i = 0 ; $i < sizeof($lichSuList1); $i++)
+                       for ($i = 0 ; $i < sizeof($lichSuList); $i++)
                        {
                        echo '<TR>
-                               <TD>'.$lichSuList1[$i]->idls.'</TD>
-                               <TD>'.$lichSuList1[$i]->tenkh.'</TD>
-                               <TD>'.$lichSuList1[$i]->soluong.'</TD>
-                               <TD>'.$lichSuList1[$i]->tongtien.'</TD>
-                               <TD>'.$lichSuList1[$i]->phone.'</TD>
-                               <TD>'.$lichSuList1[$i]->diachi.'</TD>
+                               <TD>'.$lichSuList[$i]->idls.'</TD>
+                               <TD>'.$lichSuList[$i]->tenkh.'</TD>
+                               <TD>'.$lichSuList[$i]->soluong.'</TD>
+                               <TD>'.$lichSuList[$i]->tongtien.'</TD>
+                               <TD>'.$lichSuList[$i]->phone.'</TD>
+                               <TD>'.$lichSuList[$i]->diachi.'</TD>
                              </TR>';     
                      }
                     

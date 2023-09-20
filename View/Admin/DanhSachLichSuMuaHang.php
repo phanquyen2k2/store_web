@@ -191,7 +191,7 @@ tbody tr.hide td img {
   <?php include "HomeAdmin.php"; ?>
     <main class="table">
         <section class="table__header">
-            <h1>Customer's</h1>
+            <h1>Purchase history</h1>
            
             
         </section>

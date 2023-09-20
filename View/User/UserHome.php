@@ -134,7 +134,7 @@ nav .sidebar {
             </li>
            
             <li class="list">
-              <a href='http://localhost/Weclothers/Controller/C_SanPham.php?showlskh=2' class="nav-link">
+              <a href='http://localhost/Weclothers/Controller/C_SanPham.php?showlskh' class="nav-link">
               <i class='bx bx-cart-download icon'></i>
                 <span class="link">Purchased Product</span>
               </a>

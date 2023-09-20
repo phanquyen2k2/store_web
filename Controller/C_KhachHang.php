@@ -99,6 +99,7 @@ class Controller_KhachHang
                 $khachHangList = $modelKhachHang->getDetailKhachHangByName($_SESSION['nameuser']);
                 include_once("../View/User/FormEditOfKhachHang.php"); 
         }
+       
       
          else {
             $modelKhachHang = new Model_KhachHang();
